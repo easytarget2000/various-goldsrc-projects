@@ -46,18 +46,20 @@ Wadinclude list :
 [zhlt.wad]
 
 CreateBrush:
- (0.04 seconds)
+ (0.08 seconds)
 CSGBrush:
- (0.40 seconds)
+ (0.45 seconds)
 
 Including Wadfile: \program files (x86)\steam\steamapps\common\half-life sdk\hammer editor\tools\zhlt\zhlt.wad
- - Contains 1 used texture, 12.50 percent of map (19 textures in wad)
+ - Contains 1 used texture, 11.11 percent of map (19 textures in wad)
+Using Wadfile: \program files (x86)\steam\steamapps\common\half-life sdk\texture wad files\halflife.wad
+ - Contains 1 used texture, 11.11 percent of map (3116 textures in wad)
 Using Wadfile: \users\miche\documents\projects\various-goldsrc-projects\wad\colors.wad
- - Contains 7 used textures, 87.50 percent of map (19 textures in wad)
+ - Contains 7 used textures, 77.78 percent of map (19 textures in wad)
 
-Wad files required to run the map: "colors.wad;"
-Texture usage is at 0.01 mb (of 8.00 mb MAX)
-0.55 seconds elapsed
+Wad files required to run the map: "halflife.wad;colors.wad;"
+Texture usage is at 0.02 mb (of 8.00 mb MAX)
+0.70 seconds elapsed
 
 -----   END   hlcsg -----
 
@@ -97,42 +99,44 @@ max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
 remove hull 2       [     off ] [     off ]
 
 
-SolidBSP [hull 0] 500...1000...1058 (0.41 seconds)
+SolidBSP [hull 0] Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2459,1856,1413)-(2504,1872,1440) in hull 0 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2312,1856,1409)-(2504,1872,1440) in hull 0 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+500...1000...1143 (0.16 seconds)
 BSP generation successful, writing portal file 'c:\users\miche\documents\projects\various-goldsrc-projects\bsp\gallery.prt'
-SolidBSP [hull 1] 500...1000...1005 (0.10 seconds)
-SolidBSP [hull 2] 500...1000...1018 (0.11 seconds)
-SolidBSP [hull 3] 500...1000...1038 (0.12 seconds)
-Reduced 2647 clipnodes to 1854
-Reduced 24 texinfos to 18
-Reduced 8 texdatas to 8 (1468 bytes to 1468)
-Reduced 1676 planes to 531
+SolidBSP [hull 1] 500...1000...1158 (0.13 seconds)
+SolidBSP [hull 2] 500...1000...1147 (0.13 seconds)
+SolidBSP [hull 3] 500...1000...1157 (0.14 seconds)
+Reduced 3014 clipnodes to 2043
+Reduced 27 texinfos to 21
+Reduced 9 texdatas to 9 (1512 bytes to 1512)
+Reduced 1938 planes to 652
 FixBrinks:
-Increased 1854 clipnodes to 1854.
+Increased 2043 clipnodes to 2043.
 
 Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
 ------------  ---------------  ---------------  --------
 models              1/512           64/32768    ( 0.2%)
-planes            531/32768      10620/655360   ( 1.6%)
-vertexes         6453/65535      77436/786420   ( 9.8%)
-nodes             995/32767      23880/786408   ( 3.0%)
-texinfos           18/32767        720/1310680  ( 0.1%)
-faces            4842/65535      96840/1310700  ( 7.4%)
-* worldfaces     4842/32768          0/0        (14.8%)
-clipnodes        1854/32767      14832/262136   ( 5.7%)
-leaves            397/32760      11116/917280   ( 1.2%)
-* worldleaves     396/8192           0/0        ( 4.8%)
-marksurfaces     4986/65535       9972/131070   ( 7.6%)
-surfedges       23293/512000     93172/2048000  ( 4.5%)
-edges           11778/256000     47112/1024000  ( 4.6%)
-texdata          [variable]       1468/33554432 ( 0.0%)
+planes            652/32768      13040/655360   ( 2.0%)
+vertexes         6746/65535      80952/786420   (10.3%)
+nodes            1083/32767      25992/786408   ( 3.3%)
+texinfos           21/32767        840/1310680  ( 0.1%)
+faces            5100/65535     102000/1310700  ( 7.8%)
+* worldfaces     5100/32768          0/0        (15.6%)
+clipnodes        2043/32767      16344/262136   ( 6.2%)
+leaves            471/32760      13188/917280   ( 1.4%)
+* worldleaves     470/8192           0/0        ( 5.7%)
+marksurfaces     5327/65535      10654/131070   ( 8.1%)
+surfedges       24439/512000     97756/2048000  ( 4.8%)
+edges           12363/256000     49452/1024000  ( 4.8%)
+texdata          [variable]       1512/33554432 ( 0.0%)
 lightdata        [variable]          0/50331648 ( 0.0%)
 visdata          [variable]          0/8388608  ( 0.0%)
-entdata          [variable]        467/2097152  ( 0.0%)
-* AllocBlock       27/64             0/0        (42.2%)
-8 textures referenced
-=== Total BSP file data space used: 387699 bytes ===
-Wad files required to run the map: "colors.wad;"
-1.84 seconds elapsed
+entdata          [variable]        480/2097152  ( 0.0%)
+* AllocBlock       28/64             0/0        (43.8%)
+9 textures referenced
+=== Total BSP file data space used: 412274 bytes ===
+Wad files required to run the map: "halflife.wad;colors.wad;"
+1.44 seconds elapsed
 
 -----   END   hlbsp -----
 
@@ -146,8 +150,8 @@ Submit detailed bug reports to (vluzacn@163.com)
 -----  BEGIN  hlvis -----
 Command line: C:\PROGRA~2\Steam\STEAMA~1\common\HALF-L~1\HAMMER~1\tools\zhlt\HLVIS_~1.EXE c:\users\miche\documents\projects\various-goldsrc-projects\bsp\gallery 
 Arguments: c:\users\miche\documents\projects\various-goldsrc-projects\bsp\gallery -low 
- 396 portalleafs
- 683 numportals
+ 470 portalleafs
+ 915 numportals
 
 -= Current hlvis Settings =-
 Name               |  Setting  |  Default
@@ -167,12 +171,12 @@ full vis            [     off ] [     off ]
 
 
 BasePortalVis:
- (0.03 seconds)
+ (0.04 seconds)
 LeafThread:
- (1.38 seconds)
-average leafs visible: 213
-g_visdatasize:18241  compressed from 19800
-1.43 seconds elapsed
+ (2.43 seconds)
+average leafs visible: 261
+g_visdatasize:25482  compressed from 27730
+2.49 seconds elapsed
 
 -----   END   hlvis -----
 
@@ -248,4 +252,60 @@ block opaque         [                on ] [                on ]
 ignore textures      [               off ] [               off ]
 reflectivity gamma   [             1.760 ] [             1.760 ]
 reflectivity scale   [             0.700 ] [             0.700 ]
-blur size            [             1.500 ] [             1.500 ]
+blur size            [             1.500 ] [             1.500 ]
+no emitter range     [               off ] [               off ]
+wall bleeding fix    [                on ] [                on ]
+
+
+Load Textures:
+Using Wadfile: c:\users\miche\documents\projects\various-goldsrc-projects\bsp\gallery.wa_
+9 textures referenced
+Reading texlights from 'C:\PROGRA~2\Steam\STEAMA~1\common\HALF-L~1\HAMMER~1\tools\zhlt\lights.rad'
+0 opaque models
+0 opaque faces
+5100 faces
+Create Patches : 30563 base patches
+514669 square feet [74112424.00 square inches]
+2 direct lights and 16386 fast direct lights
+1 light styles
+
+FindFacePositions:
+ (2.30 seconds)
+BuildFacelights:
+ (39.09 seconds)
+BuildVisLeafs:
+ (38.09 seconds)
+visibility matrix   :  52.2 megs
+MakeScales:
+ (33.47 seconds)
+Transfer Lists :   138178788 :   138.18M transfers
+       Indices :    53571052 :    51.09M bytes
+          Data :   276449265 :   263.64M bytes
+Bounce 1 GatherLight:
+ (2.83 seconds)
+Bounce 2 GatherLight:
+ (2.78 seconds)
+Bounce 3 GatherLight:
+ (4.42 seconds)
+Bounce 4 GatherLight:
+ (4.38 seconds)
+Bounce 5 GatherLight:
+ (3.50 seconds)
+Bounce 6 GatherLight:
+ (3.12 seconds)
+Bounce 7 GatherLight:
+ (3.22 seconds)
+Bounce 8 GatherLight:
+ (4.28 seconds)
+CreateTriangulations:
+ (0.53 seconds)
+AddPatchLights:
+ (10.94 seconds)
+FinalLightFace:
+ (0.03 seconds)
+154.35 seconds elapsed [2m 34s]
+
+-----   END   hlrad -----
+
+
+
