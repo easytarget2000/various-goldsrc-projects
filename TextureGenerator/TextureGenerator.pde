@@ -4,7 +4,7 @@ private static final color FOREGROUND_COLOR_1 = 0xFF000000;
 private static final String TEXTURE_NAME = "LargeWhiteGrouts";
 
 void setup() {
-  size(1024, 1024);
+  size(256, 256);
   clearFrame();
   frameRate(10);
 }
@@ -15,8 +15,9 @@ void draw() {
   clearFrame();
   drawRects(progress);
 
-  if (frameCount < NUM_OF_FRAMES) {
-    saveFrame("+" + frameCount + TEXTURE_NAME + ".bmp");
+  if (frameCount <= NUM_OF_FRAMES) {
+    final String textureIndex = String.valueOf(frameCount - 1);
+    saveFrame("+" + textureIndex + TEXTURE_NAME + ".bmp");
   }
 }
 
