@@ -6,19 +6,18 @@ private static final String TEXTURE_NAME = "LargeWhiteGrouts";
 void setup() {
   size(1024, 1024);
   clearFrame();
+  frameRate(10);
 }
 
 void draw() {
-  final float progress = frameCount / (float) NUM_OF_FRAMES;
-
-  if (progress > 1f) {
-    exit();
-    return;
-  }
+  final float progress = (frameCount % NUM_OF_FRAMES) / (float) NUM_OF_FRAMES;
 
   clearFrame();
   drawRects(progress);
-  saveFrame("+" + frameCount + TEXTURE_NAME + ".bmp");
+
+  if (frameCount < NUM_OF_FRAMES) {
+    saveFrame("+" + frameCount + TEXTURE_NAME + ".bmp");
+  }
 }
 
 /*
