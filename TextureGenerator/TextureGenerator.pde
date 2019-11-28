@@ -4,7 +4,7 @@ private static final color FOREGROUND_COLOR_1 = 0xFF000000;
 private static final String TEXTURE_NAME = "LargeWhiteGrouts";
 
 void setup() {
-  size(256, 256);
+  size(128, 128);
   clearFrame();
   frameRate(10);
 }
