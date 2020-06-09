@@ -1,2 +1,0 @@
-# Various GoldSrc Projects
- 
